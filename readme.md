@@ -1,4 +1,4 @@
 ## Floating SpaceShip
 
--Live: http://johnrbell.github.io//
+-Live: http://johnrbell.github.io/Gauge_CSS/
 
