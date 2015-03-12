@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+
+html { 
+	font-family:Futura, Helvetica;
+	color: white;
+	background-color: #222;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.info{
+	position: absolute;
+	z-index: 3;
+	width:100%;
+	height:200px;
+	text-align: center;
+	top: 50%;
+}
+h1{
+	font-family: 'Didact Gothic', sans-serif;
+	margin-bottom: -10px;
+}
+p{
+	font-family: 'Arimo', sans-serif;
+	font-size: 11pt;
+	line-height: 14pt;
+}
+
+.container{
+	width:400px;
+	height:200px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	overflow: hidden;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+
+.gauge-a{
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(255,255,255,.2);
+	width: 400px;
+	height: 200px;
+	top: 0%;
+	border-radius:250px 250px 0px 0px ;
+}
+.gauge-b{
+	z-index: 3;
+	position: absolute;
+	background-color: #222;
+	width: 250px;
+	height: 125px;
+	top: 75px;
+	margin-left: 75px;
+	margin-right: auto;
+	border-radius:250px 250px 0px 0px ;
+}
+.gauge-c{
+	z-index: 2;
+	position: absolute;
+	background-color: #5664F9;
+	width: 400px;
+	height: 200px;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:0px 0px 200px 200px ;
+  transform-origin:center top;
+	transition: all 1.3s ease-in-out;
+}
+
+.container:hover .gauge-c{
+	transform:rotate(.5turn);
+}
+.container:hover .gauge-data{
+	color: rgba(255,255,255,1);
+}
+
+.gauge-data{
+	z-index: 4;
+	color: rgba(255,255,255,.2);
+	font-size: 1.5em;
+	line-height: 25px;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 1s ease-out;
+}
